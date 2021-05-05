@@ -1,0 +1,31 @@
+{
+  "name": "@lunjs/eslint-config",
+  "version": "0.0.0",
+  "description": "LunJs's ESLint config",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lunjs/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "lunjs",
+    "sytleguide"
+  ],
+  "author": "jKey Lu <jkeylu@gmail.com> (https://github.com/jkeylu)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lunjs/eslint-config/issues"
+  },
+  "homepage": "https://github.com/lunjs/eslint-config#readme",
+  "peerDependencies": {
+    "eslint": "^7.25.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-node": "^11.1.0"
+  }
+}
