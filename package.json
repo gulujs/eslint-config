@@ -4,7 +4,8 @@
   "description": "LunJs's ESLint config",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext .js,.ts ."
+    "lint": "eslint --ext .js .",
+    "lint:fix": "eslint --fix --ext .js ."
   },
   "repository": {
     "type": "git",
