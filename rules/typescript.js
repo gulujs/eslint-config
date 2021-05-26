@@ -398,7 +398,13 @@ module.exports = {
       'error',
       {
         before: false,
-        after: true
+        after: true,
+        overrides: {
+          arrow: {
+            before: true,
+            after: true
+          }
+        }
       }
     ],
 
