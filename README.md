@@ -19,7 +19,7 @@ npm install --save-dev eslint @lunjs/eslint-config
 ### @lunjs/eslint-config/node
 
 ```sh
-npm install --save-dev eslint @lunjs/eslint-config eslint-plugin-node
+npm install --save-dev eslint eslint-plugin-node @lunjs/eslint-config
 ```
 
 **.eslintrc**
@@ -34,10 +34,10 @@ npm install --save-dev eslint @lunjs/eslint-config eslint-plugin-node
 
 ```sh
 npm install --save-dev eslint\
-    @lunjs/eslint-config\
     eslint-plugin-node\
     @typescript-eslint/parser\
-    @typescript-eslint/eslint-plugin
+    @typescript-eslint/eslint-plugin\
+    @lunjs/eslint-config
 ```
 
 **.eslintrc**
