@@ -278,6 +278,10 @@ module.exports = {
 
     // Disallows calling an function with an any type value
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-argument.md
+    '@typescript-eslint/no-unsafe-argument': 'error',
+
+    // Disallows calling an function with an any type value
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-argument.md
     '@typescript-eslint/no-unsafe-assignment': 'error',
 
     // Disallows calling an any type value
