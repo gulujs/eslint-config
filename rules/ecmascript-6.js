@@ -3,11 +3,7 @@ module.exports = {
   rules: {
     // require braces around arrow function bodies
     // https://eslint.org/docs/rules/arrow-body-style
-    'arrow-body-style': [
-      'error',
-      'as-needed',
-      { requireReturnForObjectLiteral: false }
-    ],
+    'arrow-body-style': 'off',
 
     // require parentheses around arrow function arguments
     // https://eslint.org/docs/rules/arrow-parens

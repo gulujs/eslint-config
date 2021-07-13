@@ -15,6 +15,18 @@ module.exports = {
     ].map(require.resolve)
   ],
   rules: {
+    'max-len': [
+      'warn',
+      {
+        code: 160,
+        tabWidth: 4,
+        ignoreComments: false,
+        ignoreUrls: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true
+      }
+    ],
     'node/no-unsupported-features/es-syntax': ['error', { ignores: ['modules'] }],
     'node/no-missing-import': [
       'error',
@@ -24,6 +36,30 @@ module.exports = {
           '.json',
           '.node',
           '.ts'
+        ]
+      }
+    ],
+    'node/file-extension-in-import': [
+      'error',
+      'never',
+      {
+        tryExtensions: [
+          '.js',
+          '.json',
+          '.node',
+          '.ts'
+        ]
+      }
+    ],
+    'node/no-unpublished-import': [
+      'error',
+      {
+        tryExtensions: [
+          '.js',
+          '.json',
+          '.node',
+          '.ts',
+          '.d.ts'
         ]
       }
     ]

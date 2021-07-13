@@ -10,7 +10,7 @@ module.exports = {
 
     // Requires using either T[] or Array<T> for arrays
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/array-type.md
-    '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
+    '@typescript-eslint/array-type': 'off',
 
     // Disallows awaiting a value that is not a Thenable
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/await-thenable.md
@@ -98,7 +98,7 @@ module.exports = {
         },
         singleline: {
           delimiter: 'semi',
-          requireLast: false
+          requireLast: true
         },
         multilineDetection: 'brackets'
       }
@@ -318,7 +318,7 @@ module.exports = {
 
     // Use function types instead of interfaces with call signatures
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-function-type.md
-    '@typescript-eslint/prefer-function-type': 'error',
+    '@typescript-eslint/prefer-function-type': 'off',
 
     // Enforce includes method over indexOf method
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-includes.md
@@ -479,13 +479,18 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md
     '@typescript-eslint/indent': [
       'error',
-      4,
+      2,
       {
+        ignoredNodes: ['FunctionExpression > Identifier > Decorator'],
         SwitchCase: 1,
         VariableDeclarator: 1,
         outerIIFEBody: 1,
         MemberExpression: 1,
         FunctionDeclaration: {
+          parameters: 1,
+          body: 1
+        },
+        FunctionExpression: {
           parameters: 1,
           body: 1
         },
@@ -521,7 +526,7 @@ module.exports = {
       'error',
       'always',
       {
-        exceptAfterSingleLine: false,
+        exceptAfterSingleLine: true,
         exceptAfterOverload: true
       }
     ],

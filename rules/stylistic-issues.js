@@ -16,13 +16,7 @@ module.exports = {
 
     // enforce line breaks after each array element
     // https://eslint.org/docs/rules/array-element-newline
-    'array-element-newline': [
-      'error',
-      {
-        multiline: true,
-        minItems: 3
-      }
-    ],
+    'array-element-newline': ['error', 'consistent'],
 
     // disallow or enforce spaces inside of blocks after opening block and before closing block
     // https://eslint.org/docs/rules/block-spacing
@@ -114,7 +108,7 @@ module.exports = {
 
     // require or disallow named `function` expressions
     // https://eslint.org/docs/rules/func-names
-    'func-names': 'warn',
+    'func-names': 'off',
 
     // enforce the consistent use of either `function` declarations or expressions
     // https://eslint.org/docs/rules/func-style
@@ -155,6 +149,10 @@ module.exports = {
         outerIIFEBody: 1,
         MemberExpression: 1,
         FunctionDeclaration: {
+          parameters: 1,
+          body: 1
+        },
+        FunctionExpression: {
           parameters: 1,
           body: 1
         },
@@ -210,7 +208,7 @@ module.exports = {
     'lines-between-class-members': [
       'error',
       'always',
-      { exceptAfterSingleLine: false }
+      { exceptAfterSingleLine: true }
     ],
 
     // enforce a maximum depth that blocks can be nested
@@ -402,7 +400,7 @@ module.exports = {
       'error',
       {
         multiline: true,
-        minProperties: 2
+        minProperties: 3
       }
     ],
 
@@ -412,7 +410,7 @@ module.exports = {
 
     // enforce placing object properties on separate lines
     // https://eslint.org/docs/rules/object-property-newline
-    'object-property-newline': ['error', { allowAllPropertiesOnSameLine: false }],
+    'object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
 
     // enforce variables to be declared either together or separately in functions
     // https://eslint.org/docs/rules/one-var
