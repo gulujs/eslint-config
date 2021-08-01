@@ -3,6 +3,13 @@
   "version": "0.0.1",
   "description": "LunJs's ESLint config",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "js.js",
+    "node.js",
+    "ts.js",
+    "rules/*"
+  ],
   "scripts": {
     "lint": "eslint --ext .js .",
     "lint:fix": "eslint --fix --ext .js .",
@@ -27,11 +34,11 @@
   },
   "homepage": "https://github.com/lunjs/eslint-config#readme",
   "peerDependencies": {
-    "eslint": "^7.30.0"
+    "eslint": "^7.32.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.28.3",
-    "@typescript-eslint/parser": "^4.28.3",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
     "eslint-find-rules": "^3.6.1",
     "eslint-plugin-node": "^11.1.0"
   }
