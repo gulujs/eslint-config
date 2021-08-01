@@ -50,4 +50,4 @@ npm install --save-dev eslint\
 
 ## License
 
-- [MIT](https://github.com/lunjs/eslint-config/blob/master/LICENSE)
+- [MIT](LICENSE)
