@@ -281,7 +281,7 @@ module.exports = {
 
     // require a newline after each call in a method chain
     // https://eslint.org/docs/rules/newline-per-chained-call
-    'newline-per-chained-call': ['error', { ignoreChainWithDepth: 4 }],
+    'newline-per-chained-call': ['error', { ignoreChainWithDepth: 6 }],
 
     // disallow `Array` constructors
     // https://eslint.org/docs/rules/no-array-constructor
@@ -301,7 +301,7 @@ module.exports = {
 
     // disallow `if` statements as the only statement in `else` blocks
     // https://eslint.org/docs/rules/no-lonely-if
-    'no-lonely-if': 'error',
+    'no-lonely-if': 'off',
 
     // disallow mixed binary operators
     // https://eslint.org/docs/rules/no-mixed-operators
@@ -399,8 +399,9 @@ module.exports = {
     'object-curly-newline': [
       'error',
       {
+        consistent: true,
         multiline: true,
-        minProperties: 3
+        minProperties: 4
       }
     ],
 
@@ -430,7 +431,7 @@ module.exports = {
 
     // require or disallow padding within blocks
     // https://eslint.org/docs/rules/padded-blocks
-    'padded-blocks': ['error', 'never'],
+    'padded-blocks': 'off',
 
     // require or disallow padding lines between statements
     // https://eslint.org/docs/rules/padding-line-between-statements
@@ -502,7 +503,7 @@ module.exports = {
     'space-before-function-paren': [
       'error',
       {
-        anonymous: 'always',
+        anonymous: 'never',
         named: 'never',
         asyncArrow: 'always'
       }

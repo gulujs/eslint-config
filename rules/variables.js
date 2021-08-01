@@ -18,14 +18,7 @@ module.exports = {
 
     // disallow variable declarations from shadowing variables declared in the outer scope
     // https://eslint.org/docs/rules/no-shadow
-    'no-shadow': [
-      'error',
-      {
-        builtinGlobals: false,
-        hoist: 'functions',
-        allow: []
-      }
-    ],
+    'no-shadow': 'off',
 
     // disallow identifiers from shadowing restricted names
     // https://eslint.org/docs/rules/no-shadow-restricted-names
@@ -61,7 +54,7 @@ module.exports = {
     'no-use-before-define': [
       'error',
       {
-        functions: true,
+        functions: false,
         classes: true,
         variables: true
       }

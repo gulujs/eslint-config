@@ -166,7 +166,7 @@ module.exports = {
 
     // disallow assignments that can lead to race conditions due to usage of `await` or `yield`
     // https://eslint.org/docs/rules/require-atomic-updates
-    'require-atomic-updates': 'warn',
+    'require-atomic-updates': 'off',
 
     // require calls to `isNaN()` when checking for `NaN`
     // https://eslint.org/docs/rules/use-isnan
