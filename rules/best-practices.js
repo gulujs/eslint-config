@@ -18,11 +18,11 @@ module.exports = {
 
     // enforce a maximum cyclomatic complexity allowed in a program
     // https://eslint.org/docs/rules/complexity
-    complexity: 'off',
+    complexity: ['error', 20],
 
     // require `return` statements to either always or never specify values
     // https://eslint.org/docs/rules/consistent-return
-    'consistent-return': 'error',
+    'consistent-return': 'off',
 
     // enforce consistent brace style for all control statements
     // https://eslint.org/docs/rules/curly
@@ -90,7 +90,7 @@ module.exports = {
 
     // disallow `else` blocks after `return` statements in `if` statements
     // https://eslint.org/docs/rules/no-else-return
-    'no-else-return': ['error', { allowElseIf: false }],
+    'no-else-return': 'off',
 
     // disallow empty functions
     // https://eslint.org/docs/rules/no-empty-function
@@ -249,7 +249,7 @@ module.exports = {
 
     // disallow unnecessary `return await`
     // https://eslint.org/docs/rules/no-return-await
-    'no-return-await': 'error',
+    'no-return-await': 'off',
 
     // disallow `javascript:` urls
     // https://eslint.org/docs/rules/no-script-url
@@ -371,6 +371,6 @@ module.exports = {
 
     // require or disallow "Yoda" conditions
     // https://eslint.org/docs/rules/yoda
-    yoda: 'error'
+    yoda: ['error', 'never', { onlyEquality: true }]
   }
 };

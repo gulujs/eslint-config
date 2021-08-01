@@ -110,7 +110,7 @@ module.exports = {
 
     // Enforces using a particular method signature syntax
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/method-signature-style.md
-    '@typescript-eslint/method-signature-style': ['error', 'property'],
+    '@typescript-eslint/method-signature-style': 'off',
 
     // Enforces naming conventions for everything across a codebase
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md
@@ -591,16 +591,7 @@ module.exports = {
 
     // Disallow variable declarations from shadowing variables declared in the outer scope
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md
-    '@typescript-eslint/no-shadow': [
-      'error',
-      {
-        builtinGlobals: false,
-        hoist: 'functions',
-        allow: [],
-        ignoreTypeValueShadow: true,
-        ignoreFunctionTypeParameterNameValueShadow: true
-      }
-    ],
+    '@typescript-eslint/no-shadow': 'off',
     'no-shadow': 'off',
 
     // Disallow throwing literals as exceptions
@@ -640,7 +631,7 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': [
       'error',
       {
-        functions: true,
+        functions: false,
         classes: true,
         variables: true,
         enums: true,
@@ -691,7 +682,7 @@ module.exports = {
     '@typescript-eslint/space-before-function-paren': [
       'error',
       {
-        anonymous: 'always',
+        anonymous: 'never',
         named: 'never',
         asyncArrow: 'always'
       }
