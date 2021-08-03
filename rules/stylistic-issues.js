@@ -221,8 +221,9 @@ module.exports = {
       'warn',
       {
         code: 120,
-        tabWidth: 2,
+        tabWidth: 4,
         ignoreComments: false,
+        ignoreTrailingComments: true,
         ignoreUrls: true,
         ignoreStrings: true,
         ignoreTemplateLiterals: true,

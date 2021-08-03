@@ -1,4 +1,10 @@
 module.exports = {
+  env: {
+    es6: true
+  },
+  parserOptions: {
+    ecmaVersion: 2020
+  },
   extends: [
     './rules/possible-errors',
     './rules/best-practices',
