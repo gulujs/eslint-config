@@ -3,7 +3,7 @@ module.exports = {
   parserOptions: {
     project: 'tsconfig.json',
     sourceType: 'module',
-    ecmaVersion: 2018
+    ecmaVersion: 2020
   },
   plugins: ['@typescript-eslint'],
   extends: [
@@ -21,6 +21,7 @@ module.exports = {
         code: 160,
         tabWidth: 4,
         ignoreComments: false,
+        ignoreTrailingComments: true,
         ignoreUrls: true,
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
