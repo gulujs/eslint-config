@@ -356,6 +356,10 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-regexp-exec.md
     '@typescript-eslint/prefer-regexp-exec': 'off',
 
+    // Enforce that this is used when only this type is returned
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-return-this-type.md
+    '@typescript-eslint/prefer-return-this-type': 'off',
+
     // Enforce the use of String#startsWith and String#endsWith instead of other equivalent methods of checking substrings
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-string-starts-ends-with.md
     '@typescript-eslint/prefer-string-starts-ends-with': 'error',
