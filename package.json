@@ -4,18 +4,16 @@
   "description": "LunJs's ESLint config",
   "main": "index.js",
   "files": [
-    "index.js",
-    "js.js",
-    "node.js",
-    "ts.js",
+    "js/*",
+    "ts/*",
     "rules/*"
   ],
   "scripts": {
     "lint": "eslint --ext .js .",
     "lint:fix": "eslint --fix --ext .js .",
-    "unused:js": "eslint-find-rules --unused ./js.js",
-    "unused:node": "eslint-find-rules --unused ./node.js",
-    "unused:ts": "eslint-find-rules --unused ./ts.js"
+    "unused:js": "eslint-find-rules --unused ./js/index.js",
+    "unused:node": "eslint-find-rules --unused ./js/node.js",
+    "unused:ts": "eslint-find-rules --unused ./ts/index.js"
   },
   "repository": {
     "type": "git",
