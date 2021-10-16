@@ -192,6 +192,10 @@ module.exports = {
       }
     ],
 
+    // Disallow the void operator except when used to discard a value
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-meaningless-void-operator.md
+    '@typescript-eslint/no-meaningless-void-operator': 'error',
+
     // Enforce valid definition of new and constructor
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-misused-new.md
     '@typescript-eslint/no-misused-new': 'error',
@@ -215,6 +219,10 @@ module.exports = {
         allowDefinitionFiles: true
       }
     ],
+
+    // Disallows using a non-null assertion in the left operand of the nullish coalescing operator
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-asserted-nullish-coalescing.md
+    '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
 
     // Disallows using a non-null assertion after an optional chain expression
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-asserted-optional-chain.md
@@ -593,6 +601,11 @@ module.exports = {
     '@typescript-eslint/no-redeclare': ['error', { builtinGlobals: true }],
     'no-redeclare': 'off',
 
+    // Disallow specified modules when loaded by import
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-restricted-imports.md
+    '@typescript-eslint/no-restricted-imports': 'off',
+    'no-restricted-imports': 'off',
+
     // Disallow variable declarations from shadowing variables declared in the outer scope
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md
     '@typescript-eslint/no-shadow': 'off',
@@ -654,6 +667,11 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/object-curly-spacing.md
     '@typescript-eslint/object-curly-spacing': ['error', 'always'],
     'object-curly-spacing': 'off',
+
+    // require or disallow padding lines between statements
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/padding-line-between-statements.md
+    '@typescript-eslint/padding-line-between-statements': 'off',
+    'padding-line-between-statements': 'off',
 
     // Enforce the consistent use of either backticks, double, or single quotes
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/quotes.md
