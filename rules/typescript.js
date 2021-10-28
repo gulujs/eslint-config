@@ -493,7 +493,7 @@ module.exports = {
       'error',
       2,
       {
-        ignoredNodes: ['FunctionExpression > Identifier > Decorator'],
+        ignoredNodes: ['FunctionExpression > Identifier > Decorator', 'PropertyDefinition[decorators] > Identifier'],
         SwitchCase: 1,
         VariableDeclarator: 1,
         outerIIFEBody: 1,
