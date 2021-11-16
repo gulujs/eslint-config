@@ -56,15 +56,13 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-definitions.md
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
 
+    // Enforces consistent usage of type exports
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-exports.md
+    '@typescript-eslint/consistent-type-exports': 'off',
+
     // Enforces consistent usage of type imports
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-imports.md
-    '@typescript-eslint/consistent-type-imports': [
-      'error',
-      {
-        prefer: 'no-type-imports',
-        disallowTypeAnnotations: true
-      }
-    ],
+    '@typescript-eslint/consistent-type-imports': 'off',
 
     // Require explicit return types on functions and class methods
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md

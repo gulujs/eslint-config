@@ -62,7 +62,7 @@ module.exports = {
 
     // disallow unsupported ECMAScript syntax on the specified version
     // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-syntax.md
-    'node/no-unsupported-features/es-syntax': 'error',
+    'node/no-unsupported-features/es-syntax': ['error', { ignores: ['modules', 'dynamicImport'] }],
 
     // disallow unsupported Node.js built-in APIs on the specified version
     // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/node-builtins.md
@@ -98,7 +98,7 @@ module.exports = {
 
     // enforce the style of file extensions in import declarations
     // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/file-extension-in-import.md
-    'node/file-extension-in-import': ['error', 'never'],
+    'node/file-extension-in-import': ['error', 'always'],
 
     // require require() calls to be placed at top-level module scope
     // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/global-require.md
