@@ -596,6 +596,10 @@ module.exports = {
     // https://eslint.org/docs/rules/prefer-numeric-literals
     'prefer-numeric-literals': 'error',
 
+    // disallow use of `Object.prototype.hasOwnProperty.call()` and prefer use of `Object.hasOwn()`
+    // https://eslint.org/docs/rules/prefer-object-has-own
+    'prefer-object-has-own': 'off',
+
     // disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead
     // https://eslint.org/docs/rules/prefer-object-spread
     'prefer-object-spread': 'error',
