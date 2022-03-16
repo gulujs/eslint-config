@@ -234,6 +234,10 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-parameter-properties.md
     '@typescript-eslint/no-parameter-properties': 'off',
 
+    // Disallow members of unions and intersections that do nothing or override type information
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-redundant-type-constituents.md
+    '@typescript-eslint/no-redundant-type-constituents': 'off',
+
     // Disallows invocation of require()
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-require-imports.md
     '@typescript-eslint/no-require-imports': 'error',
@@ -301,6 +305,10 @@ module.exports = {
     // Disallows returning any from a function
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-return.md
     '@typescript-eslint/no-unsafe-return': 'error',
+
+    // Disallow empty exports that don't change anything in a module file
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-useless-empty-export.md
+    '@typescript-eslint/no-useless-empty-export': 'error',
 
     // Disallows the use of require statements except in import statements
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-var-requires.md
@@ -696,6 +704,11 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/semi.md
     '@typescript-eslint/semi': ['error', 'always'],
     semi: 'off',
+
+    // Enforces consistent spacing before blocks
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/space-before-blocks.md
+    '@typescript-eslint/space-before-blocks': ['error', 'always'],
+    'space-before-blocks': 'off',
 
     // Enforces consistent spacing before function parenthesis
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/space-before-function-paren.md
