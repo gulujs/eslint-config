@@ -40,6 +40,10 @@ module.exports = {
     // https://eslint.org/docs/rules/no-const-assign
     'no-const-assign': 'error',
 
+    // disallow expressions where the operation doesn't affect the value
+    // https://eslint.org/docs/rules/no-constant-binary-expression
+    'no-constant-binary-expression': 'error',
+
     // disallow constant expressions in conditions
     // https://eslint.org/docs/rules/no-constant-condition
     'no-constant-condition': ['error', { checkLoops: true }],

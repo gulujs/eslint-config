@@ -318,6 +318,10 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/non-nullable-type-assertion-style.md
     '@typescript-eslint/non-nullable-type-assertion-style': 'error',
 
+    // Require or disallow the use of parameter properties in class constructors
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/parameter-properties.md
+    '@typescript-eslint/parameter-properties': 'off',
+
     // Prefer usage of as const over literal type
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-as-const.md
     '@typescript-eslint/prefer-as-const': 'error',
