@@ -132,6 +132,10 @@ module.exports = {
       }
     ],
 
+    // Disallow duplicate enum member values
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-duplicate-enum-values.md
+    '@typescript-eslint/no-duplicate-enum-values': 'error',
+
     // Disallow the delete operator with computed key expressions
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-dynamic-delete.md
     '@typescript-eslint/no-dynamic-delete': 'error',
