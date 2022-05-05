@@ -1,6 +1,6 @@
 {
   "name": "@lunjs/eslint-config",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "LunJs's ESLint config",
   "main": "index.js",
   "files": [
