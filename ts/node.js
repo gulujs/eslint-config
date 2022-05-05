@@ -7,29 +7,8 @@ module.exports = {
     ].map(require.resolve)
   ],
   rules: {
-    'node/no-missing-import': [
-      'error',
-      {
-        tryExtensions: [
-          '.js',
-          '.json',
-          '.node',
-          '.ts'
-        ]
-      }
-    ],
-    'node/file-extension-in-import': [
-      'error',
-      'never',
-      {
-        tryExtensions: [
-          '.js',
-          '.json',
-          '.node',
-          '.ts'
-        ]
-      }
-    ],
+    'node/no-missing-import': 'off',
+    'node/file-extension-in-import': 'off',
     'node/no-unpublished-import': [
       'error',
       {
