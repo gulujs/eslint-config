@@ -684,7 +684,16 @@ module.exports = {
 
     // require or disallow padding lines between statements
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/padding-line-between-statements.md
-    '@typescript-eslint/padding-line-between-statements': 'off',
+    '@typescript-eslint/padding-line-between-statements': [
+      'error',
+      { blankLine: 'always', prev: 'import', next: '*' },
+      { blankLine: 'any', prev: 'import', next: 'import' },
+      { blankLine: 'always', prev: 'export', next: '*' },
+      { blankLine: 'any', prev: 'export', next: 'export' },
+      { blankLine: 'always', prev: 'function', next: '*' },
+      { blankLine: 'always', prev: ['interface', 'type'], next: '*' },
+      { blankLine: 'any', prev: ['interface', 'type'], next: ['interface', 'type'] }
+    ],
     'padding-line-between-statements': 'off',
 
     // Enforce the consistent use of either backticks, double, or single quotes

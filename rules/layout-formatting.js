@@ -309,7 +309,14 @@ module.exports = {
 
     // require or disallow padding lines between statements
     // https://eslint.org/docs/rules/padding-line-between-statements
-    'padding-line-between-statements': 'off',
+    'padding-line-between-statements': [
+      'error',
+      { blankLine: 'always', prev: 'import', next: '*' },
+      { blankLine: 'any', prev: 'import', next: 'import' },
+      { blankLine: 'always', prev: 'export', next: '*' },
+      { blankLine: 'any', prev: 'export', next: 'export' },
+      { blankLine: 'always', prev: 'function', next: '*' }
+    ],
 
     // enforce the consistent use of either backticks, double, or single quotes
     // https://eslint.org/docs/rules/quotes
