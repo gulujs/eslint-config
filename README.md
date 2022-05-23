@@ -1,68 +1,68 @@
-# @lunjs/eslint-config
+# @gulujs/eslint-config
 
 ## Install and Usage
 
-### @lunjs/eslint-config/js
+### @gulujs/eslint-config/js
 
 ```sh
-npm install --save-dev eslint @lunjs/eslint-config
+npm install --save-dev eslint @gulujs/eslint-config
 ```
 
 **.eslintrc**
 
 ```json
 {
-  "extends": "@lunjs/eslint-config/js"
+  "extends": "@gulujs/eslint-config/js"
 }
 ```
 
-### @lunjs/eslint-config/js/node
+### @gulujs/eslint-config/js/node
 
 ```sh
-npm install --save-dev eslint eslint-plugin-node @lunjs/eslint-config
+npm install --save-dev eslint eslint-plugin-node @gulujs/eslint-config
 ```
 
 **.eslintrc**
 
 ```json
 {
-  "extends": "@lunjs/eslint-config/js/node"
+  "extends": "@gulujs/eslint-config/js/node"
 }
 ```
 
-### @lunjs/eslint-config/ts
+### @gulujs/eslint-config/ts
 
 ```sh
 npm install --save-dev eslint\
     @typescript-eslint/parser\
     @typescript-eslint/eslint-plugin\
-    @lunjs/eslint-config
+    @gulujs/eslint-config
 ```
 
 **.eslintrc**
 
 ```json
 {
-  "extends": "@lunjs/eslint-config/ts"
+  "extends": "@gulujs/eslint-config/ts"
 }
 ```
 
 
-### @lunjs/eslint-config/ts/node
+### @gulujs/eslint-config/ts/node
 
 ```sh
 npm install --save-dev eslint\
     @typescript-eslint/parser\
     @typescript-eslint/eslint-plugin\
     eslint-plugin-node\
-    @lunjs/eslint-config
+    @gulujs/eslint-config
 ```
 
 **.eslintrc**
 
 ```json
 {
-  "extends": "@lunjs/eslint-config/ts/node"
+  "extends": "@gulujs/eslint-config/ts/node"
 }
 ```
 
