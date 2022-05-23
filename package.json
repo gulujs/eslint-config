@@ -1,7 +1,7 @@
 {
-  "name": "@lunjs/eslint-config",
-  "version": "0.4.4",
-  "description": "LunJs's ESLint config",
+  "name": "@gulujs/eslint-config",
+  "version": "0.5.0",
+  "description": "GuluJS's ESLint config",
   "main": "index.js",
   "files": [
     "js/*",
@@ -17,26 +17,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lunjs/eslint-config.git"
+    "url": "git+https://github.com/gulujs/eslint-config.git"
   },
   "keywords": [
     "eslint",
     "eslintconfig",
-    "lunjs",
+    "gulujs",
     "sytleguide"
   ],
   "author": "jKey Lu <jkeylu@gmail.com> (https://github.com/jkeylu)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lunjs/eslint-config/issues"
+    "url": "https://github.com/gulujs/eslint-config/issues"
   },
-  "homepage": "https://github.com/lunjs/eslint-config#readme",
+  "homepage": "https://github.com/gulujs/eslint-config#readme",
   "peerDependencies": {
-    "eslint": "^8.15.0"
+    "eslint": "^8.16.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.23.0",
-    "@typescript-eslint/parser": "^5.23.0",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
     "eslint-find-rules": "^4.1.0",
     "eslint-plugin-node": "^11.1.0"
   }
