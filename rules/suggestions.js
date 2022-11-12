@@ -108,6 +108,10 @@ module.exports = {
     // https://eslint.org/docs/rules/init-declarations
     'init-declarations': 'off',
 
+    // Require or disallow logical assignment logical operator shorthand
+    // https://eslint.org/docs/latest/rules/logical-assignment-operators
+    'logical-assignment-operators': ['error', 'always'],
+
     // enforce a maximum number of classes per file
     // https://eslint.org/docs/rules/max-classes-per-file
     'max-classes-per-file': ['error', 1],
@@ -204,6 +208,10 @@ module.exports = {
     // disallow empty functions
     // https://eslint.org/docs/rules/no-empty-function
     'no-empty-function': ['error', { allow: [] }],
+
+    // Disallow empty static blocks
+    // https://eslint.org/docs/latest/rules/no-empty-static-block
+    'no-empty-static-block': 'error',
 
     // disallow `null` comparisons without type-checking operators
     // https://eslint.org/docs/rules/no-eq-null

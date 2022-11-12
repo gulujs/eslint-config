@@ -38,6 +38,10 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/class-literal-property-style.md
     '@typescript-eslint/class-literal-property-style': ['error', 'fields'],
 
+    // Enforce specifying generic type arguments on type annotation or constructor name of a constructor call.
+    // https://typescript-eslint.io/rules/consistent-generic-constructors/
+    '@typescript-eslint/consistent-generic-constructors': 'off',
+
     // Enforce or disallow the use of the record type
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-indexed-object-style.md
     '@typescript-eslint/consistent-indexed-object-style': ['error', 'record'],
@@ -302,6 +306,10 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-call.md
     '@typescript-eslint/no-unsafe-call': 'error',
 
+    // Disallow unsafe declaration merging.
+    // https://typescript-eslint.io/rules/no-unsafe-declaration-merging
+    '@typescript-eslint/no-unsafe-declaration-merging': 'warn',
+
     // Disallows member access on any typed variables
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-member-access.md
     '@typescript-eslint/no-unsafe-member-access': 'error',
@@ -405,6 +413,10 @@ module.exports = {
     // Enforce template literal expressions to be of string type
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/restrict-template-expressions.md
     '@typescript-eslint/restrict-template-expressions': 'off',
+
+    // Enforce constituents of a type union/intersection to be sorted alphabetically.
+    // https://typescript-eslint.io/rules/sort-type-constituents
+    '@typescript-eslint/sort-type-constituents': 'off',
 
     // Enforces that members of a type union/intersection are sorted alphabetically
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/sort-type-union-intersection-members.md
