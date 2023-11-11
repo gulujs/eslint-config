@@ -1,11 +1,11 @@
 {
   "name": "@gulujs/eslint-config",
-  "version": "0.5.1",
+  "version": "0.6.1",
   "description": "GuluJS's ESLint config",
   "main": "index.js",
   "files": [
-    "js/*",
-    "ts/*",
+    "js.js",
+    "ts.js",
     "rules/*"
   ],
   "scripts": {
