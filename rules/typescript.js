@@ -34,9 +34,19 @@ module.exports = {
       }
     ],
 
+    // Disallow or enforce spaces inside of blocks after opening block and before closing block.
+    // https://typescript-eslint.io/rules/block-spacing
+    'block-spacing': 'off',
+    '@typescript-eslint/block-spacing': ['error', 'always'],
+
     // Ensures that literals on classes are exposed in a consistent style
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/class-literal-property-style.md
     '@typescript-eslint/class-literal-property-style': ['error', 'fields'],
+
+    // Enforce that class methods utilize this.
+    // https://typescript-eslint.io/rules/class-methods-use-this
+    'class-methods-use-this': 'off',
+    '@typescript-eslint/class-methods-use-this': 'off',
 
     // Enforce specifying generic type arguments on type annotation or constructor name of a constructor call.
     // https://typescript-eslint.io/rules/consistent-generic-constructors/
@@ -140,6 +150,10 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-duplicate-enum-values.md
     '@typescript-eslint/no-duplicate-enum-values': 'error',
 
+    // Disallow duplicate constituents of union or intersection types.
+    // https://typescript-eslint.io/rules/no-duplicate-type-constituents
+    '@typescript-eslint/no-duplicate-type-constituents': 'error',
+
     // Disallow the delete operator with computed key expressions
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-dynamic-delete.md
     '@typescript-eslint/no-dynamic-delete': 'error',
@@ -215,6 +229,10 @@ module.exports = {
         checksVoidReturn: false
       }
     ],
+
+    // Disallow enums from having both number and string members.
+    // https://typescript-eslint.io/rules/no-mixed-enums
+    '@typescript-eslint/no-mixed-enums': 'error',
 
     // Disallow the use of custom TypeScript modules and namespaces
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-namespace.md
@@ -310,6 +328,10 @@ module.exports = {
     // https://typescript-eslint.io/rules/no-unsafe-declaration-merging
     '@typescript-eslint/no-unsafe-declaration-merging': 'warn',
 
+    // Disallow comparing an enum value with a non-enum value.
+    // https://typescript-eslint.io/rules/no-unsafe-enum-comparison
+    '@typescript-eslint/no-unsafe-enum-comparison': 'error',
+
     // Disallows member access on any typed variables
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-member-access.md
     '@typescript-eslint/no-unsafe-member-access': 'error',
@@ -337,6 +359,11 @@ module.exports = {
     // Prefer usage of as const over literal type
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-as-const.md
     '@typescript-eslint/prefer-as-const': 'error',
+
+    // Require destructuring from arrays and/or objects.
+    // https://typescript-eslint.io/rules/prefer-destructuring
+    'prefer-destructuring': 'off',
+    '@typescript-eslint/prefer-destructuring': 'off',
 
     // Prefer initializing each enums member value
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md
@@ -407,8 +434,8 @@ module.exports = {
     '@typescript-eslint/require-array-sort-compare': 'error',
 
     // When adding two variables, operands must both be of type number or of type string
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/restrict-plus-operands.md
-    '@typescript-eslint/restrict-plus-operands': ['error', { checkCompoundAssignments: true }],
+    // https://typescript-eslint.io/rules/restrict-plus-operands
+    '@typescript-eslint/restrict-plus-operands': ['error', { skipCompoundAssignments: false }],
 
     // Enforce template literal expressions to be of string type
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/restrict-template-expressions.md
@@ -547,6 +574,18 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/init-declarations.md
     '@typescript-eslint/init-declarations': 'off',
 
+    // Enforce consistent spacing between property names and type annotations in types and interfaces.
+    // https://typescript-eslint.io/rules/key-spacing
+    'key-spacing': 'off',
+    '@typescript-eslint/key-spacing': [
+      'error',
+      {
+        beforeColon: false,
+        afterColon: true,
+        mode: 'strict'
+      }
+    ],
+
     // Enforce consistent spacing before and after keywords
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/keyword-spacing.md
     '@typescript-eslint/keyword-spacing': [
@@ -557,6 +596,11 @@ module.exports = {
       }
     ],
     'keyword-spacing': 'off',
+
+    // Require empty lines around comments.
+    // https://typescript-eslint.io/rules/lines-around-comment
+    'lines-around-comment': 'off',
+    '@typescript-eslint/lines-around-comment': 'off',
 
     // Require or disallow an empty line between class members
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/lines-between-class-members.md
@@ -569,6 +613,11 @@ module.exports = {
       }
     ],
     'lines-between-class-members': 'off',
+
+    // Enforce a maximum number of parameters in function definitions.
+    // https://typescript-eslint.io/rules/max-params
+    'max-params': 'off',
+    '@typescript-eslint/max-params': 'off',
 
     // Disallow generic Array constructors
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-array-constructor.md
@@ -603,6 +652,10 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-implied-eval.md
     '@typescript-eslint/no-implied-eval': 'error',
     'no-implied-eval': 'off',
+
+    // Enforce the use of top-level import type qualifier when an import only has specifiers with inline type qualifiers.
+    // https://typescript-eslint.io/rules/no-import-type-side-effects
+    '@typescript-eslint/no-import-type-side-effects': 'off',
 
     // Disallow this keywords outside of classes or class-like objects
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-invalid-this.md

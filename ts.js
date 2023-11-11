@@ -3,13 +3,13 @@ module.exports = {
   parserOptions: {
     project: 'tsconfig.json',
     sourceType: 'module',
-    ecmaVersion: 2020
+    ecmaVersion: 2021
   },
   plugins: ['@typescript-eslint'],
   extends: [
     ...[
-      '../js',
-      '../rules/typescript'
+      './js',
+      './rules/typescript'
     ].map(require.resolve)
   ],
   rules: {

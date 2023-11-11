@@ -1,5 +1,5 @@
 {
-  "extends": "./js/node",
+  "extends": "./js",
   "env": {
     "node": true
   }

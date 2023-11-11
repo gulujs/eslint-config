@@ -343,6 +343,10 @@ module.exports = {
     // https://eslint.org/docs/rules/no-nonoctal-decimal-escape
     'no-nonoctal-decimal-escape': 'error',
 
+    // Disallow calls to the Object constructor without an argument
+    // https://eslint.org/docs/latest/rules/no-object-constructor
+    'no-object-constructor': 'error',
+
     // disallow octal literals
     // https://eslint.org/docs/rules/no-octal
     'no-octal': 'error',
