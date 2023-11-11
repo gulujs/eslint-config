@@ -629,11 +629,6 @@ module.exports = {
     '@typescript-eslint/no-dupe-class-members': 'error',
     'no-dupe-class-members': 'off',
 
-    // Disallow duplicate imports
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-duplicate-imports.md
-    '@typescript-eslint/no-duplicate-imports': ['error', { includeExports: false }],
-    'no-duplicate-imports': 'off',
-
     // Disallow empty functions
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md
     '@typescript-eslint/no-empty-function': 'error',
